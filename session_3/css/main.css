@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.slider>.slider-item {
+.slider .slider-item {
   display: flex;
   width: calc(100% - 100px);
   padding: 20px;

@@ -37,6 +37,18 @@ let productsMock = [
     "imageLink": "xa-phong.jpg"
   }
 ]
+function add(ths, sno) {
+	for (var i = 1; i <= 5; i++) {
+		var cur = document.getElementById("star" + i)
+		cur.className = "far fa-star"
+	}
+	for (var i = 1; i <= sno; i++) {
+		var cur = document.getElementById("star" + i)
+		if (cur.className == "far fa-star") {
+			cur.className = "fas fa-star"
+		}
+	}
+}
 
 async function init() {
   // let url = 'http://10.1.9.1:9000/data-product'
@@ -62,7 +74,9 @@ async function init() {
         <img src="./img/${imageLink}" alt="Ảnh sản phẩm">
       </div>
       <div class="display-4 pb-3">${title}</div>
-      <div class="text-bold">${price} VND</div>
+      <h4 class="price">Price: <span>${price} VND</span></h4>
+      <button type="button" class="btn btn-success">Add to cart</button>
+      <button type="button" class="btn btn-primary">Buy</button>
     </div>
     `
 
