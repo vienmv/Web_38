@@ -63,8 +63,29 @@
 //const util= require("util")
 
 //3. require() installed package
-const $ =require("jquery")
-console.log($)
+// const $ =require("jquery")
+// console.log($)
 
-const _ = require("lodash")
-console.log(_.camelCase('abc xyz'))
+// const _ = require("lodash")
+// console.log(_.camelCase('abc xyz'))
+
+// let obj = {
+//  a:{
+//      b: {
+//          c:{
+//              d:1
+//          }
+//      }
+//  }
+// }
+// let d=_.get(obj,'a.b.c')
+// console.log(d)
+
+//open server with express
+const express = require("express")
+const app = express()
+
+app.get('/',(rep,res)=>{
+    res.send("Hello ")
+})
+app.listen(9000)
