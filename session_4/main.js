@@ -28,8 +28,6 @@
 // list file trong thu muc fs.readdir
 //xoa file fs.unlink
 //xoa thu muc fs.mrdir
-//3. require() installed package
-
 
 // const os = require("os") 
 // let platform = os.platform()
@@ -62,5 +60,11 @@
 // let strZip = zlib.deflateSync(strSource).toString("base64")
 // console.log("Str zip " ,strZip)
 
-const util= require("util")
+//const util= require("util")
 
+//3. require() installed package
+const $ =require("jquery")
+console.log($)
+
+const _ = require("lodash")
+console.log(_.camelCase('abc xyz'))
