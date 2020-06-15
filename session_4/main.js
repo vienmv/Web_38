@@ -88,4 +88,12 @@ const app = express()
 app.get('/',(rep,res)=>{
     res.send("Hello ")
 })
+
+app.get("/product",(req,res)=>{
+    res.json([
+        {id:1,title:"product 1"},
+        {id:1,title:"product 1"}
+    ])
+})
+
 app.listen(9000)
