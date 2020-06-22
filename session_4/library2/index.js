@@ -1,5 +1,5 @@
-let number=1
+let number = 1
 
 module.exports = {
-    number
+  number
 }
